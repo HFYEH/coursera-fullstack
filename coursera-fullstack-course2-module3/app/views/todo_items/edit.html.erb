@@ -1,0 +1,5 @@
+<%= form_for @todo_item do |f| %>
+  <%= render :partial => 'form', :locals => { :f => f } %>
+    <%= f.label :completed %>
+    <%= f.check_box :completed %>
+<% end %>
